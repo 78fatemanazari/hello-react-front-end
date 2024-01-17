@@ -31,27 +31,18 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Server</summary>
   <ul>
-    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+    <li>
+      <a href="https://reactjs.org/">
+        <img src="https://skillicons.dev/icons?i=react"/> React
+      </a>
+    </li>
+    <li>
+      <a href="https://redux.js.org/">
+        <img src="https://skillicons.dev/icons?i=redux"/> Redux
+      </a>
+    </li>
   </ul>
-</details>
-
-<details>
-  <summary>Databases</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
-### Key Features <a name="key-features"></a>
-
-- **Contains data about messages**
-- **Fetches data from Rails database**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -59,59 +50,70 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+To run this project you need:
 
-- An IDE (ex: VS Code)
-- Github account
+- Have Ruby installed. If you need to install Ruby, follow the instructions on the [official page](https://www.ruby-lang.org/en/documentation/installation/).
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-```sh
-  cd project-folder
-  git clone git@github.com:78fatemanazari/hello-rails-backend.git
+Example commands:
+
+- With SSH:
+
+```bash
+  cd my-folder
+  git clone git@github.com:ITurres/hello-react-front-end.git
 ```
 
-### Install
+- With HTTPS:
 
-Install this project with webpack:
-
-```sh
-  cd project-folder
-  bundle install
-  rails db:setup
+```bash
+  cd my-folder
+  git clone https://github.com/78fatemanazari/hello-react-front-end
 ```
 
-### Usage
+- With GitHub CLI:
 
-To run the project, execute the following command:
-
-
-```sh
-  rails server
+```bash
+  cd my-folder
+  gh repo clone ITurres/hello-react-front-end
 ```
 
-### Run tests
+### Install <a name="install"></a>
 
-To run tests, run the following command:
+Go to the project directory:
 
-```sh
-  rspec spec
+```bash
+ cd hello-react-front-end
 ```
 
-### Deployment
+Install this project's dependencies with:
 
-You can deploy this project using GitPages:
+- npm install
 
-- Go to github.com
-- Create a new repository
-- Add all website files in the new repository
-- Go to Settings/Pages
-- Go to branch and change from 'none' to 'main'
-- Click Save
+### Usage <a name="usage"></a>
+
+Run the following command inside the project folder to start the application:
+
+```bash
+ npm start
+```
+
+This will start the application on your local server. You can now open your browser and go to [http://localhost:3000/](http://localhost:3000/) to see the application running.
+
+### Run tests <a name="run-tests"></a>
+
+To execute the tests, run the following command inside the project folder (root):
+
+```bash
+ npm test
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
 
 ## 👥 Authors <a name="authors"></a>
 
