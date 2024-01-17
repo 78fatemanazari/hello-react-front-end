@@ -11,9 +11,7 @@ const Greetings = () => {
   }, [dispatch]);
 
   useEffect(() => {
-    console.log('Greeting:', greeting);
-    console.log('Loading:', loading);
-    console.log('Error:', error);
+    console.log('Redux State:', { greeting, loading, error });
   }, [greeting, loading, error]);
 
   if (loading) {

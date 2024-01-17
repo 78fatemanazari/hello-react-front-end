@@ -3,9 +3,8 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 // Create an asynchronous thunk for fetching random greeting
 export const fetchRandomGreeting = createAsyncThunk('greetings/fetchRandom', async () => {
   try {
-    const response = await fetch('/greetings/random_greeting');
+    const response = await fetch('http://127.0.0.1:3000/');
     const data = await response.json();
-    console.log('API Response:', data);
     return data.greeting;
   } catch (error) {
     throw error; // Let the error propagate to be handled by the rejected action
