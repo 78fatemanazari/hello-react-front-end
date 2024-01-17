@@ -11,7 +11,6 @@ const Greetings = () => {
   }, [dispatch]);
 
   useEffect(() => {
-    console.log('Redux State:', { greeting, loading, error });
   }, [greeting, loading, error]);
 
   if (loading) {
@@ -19,7 +18,12 @@ const Greetings = () => {
   }
 
   if (error) {
-    return <p>Error: {error}</p>;
+    return (
+      <p>
+        Error:
+        {error}
+      </p>
+    );
   }
 
   return (
